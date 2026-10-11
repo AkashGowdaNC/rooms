@@ -1,9 +1,6 @@
 # Testing Strategy
 
 > **Navigation:** [Documentation hub](README.md) · [Settings & preflight](SETTINGS.md) (CLI smoke tests)
-## Changelog expectations for tests
-
-Tests and internal refactors usually do **not** need a `[Unreleased]` entry. If your change alters user-visible behavior, configuration, CLI output, or a documented workflow, add a line under `[Unreleased]` in `CHANGELOG.md` in the same PR. See the [Changelog policy](../CONTRIBUTING.md#changelog-policy) in `CONTRIBUTING.md`.
 
 The Multi-Agent Rooms framework places paramount importance on reliability and predictable logic flow, particularly concerning the orchestration of multiple AI agents and the preservation of human-in-the-loop interventions.
 
@@ -123,3 +120,12 @@ assert t2.get("skipped") is True
 # Test timestamp presence
 assert "timestamp" in t1
 ```
+# Test timestamp presence
+assert "timestamp" in t1
+
+
+## Contributing & PR Guidelines
+
+### Changelog expectations
+
+Tests and internal refactors usually do **not** need a `[Unreleased]` entry. If your change alters user-visible behavior, configuration, CLI output, or a documented workflow, add a line under `[Unreleased]` in [CHANGELOG.md](../CHANGELOG.md) in the same PR. See the [Changelog policy](../CONTRIBUTING.md#changelog-policy) in `CONTRIBUTING.md`.
