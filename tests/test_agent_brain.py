@@ -2,7 +2,7 @@
 
 import pytest
 
-from rooms.brains import AgentBrain , BrainResult
+from rooms.brains import AgentBrain
 
 
 def test_agent_brain_cannot_be_instantiated():
