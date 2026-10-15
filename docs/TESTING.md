@@ -117,8 +117,6 @@ agent2.generate_response = MagicMock(return_value="PASS")
 t2 = session.generate_next_turn()
 assert t2.get("skipped") is True
 
-# Test timestamp presence
-assert "timestamp" in t1
 ```
 # Test timestamp presence
 assert "timestamp" in t1
